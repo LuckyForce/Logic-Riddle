@@ -10,7 +10,7 @@ Lasser (38%): Frontend (Everything that had to do with looks), integration of Ca
 Sam (10%): Database initialization Script and JS Frontend Validations. <br>
 
 <h5>Statistic from 10th January 2022</h5>
-![20220110-Contributor-Statistic](https://github.com/LuckyForce/Logic-Riddle/blob/main/organizational/20220110-Contributor-Statistic.jpg)
+![20220110-Contributor-Statistic](./organizational/20220110-Contributor-Statistic.jpg)
 
 <h5>Description:</h5>
 On our page you can calculate logic expressions, or make an account and create or solve logic riddles.
