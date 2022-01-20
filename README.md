@@ -10,7 +10,7 @@ Lasser (35%): Frontend (Everything that had to do with looks), integration of Ca
 Sam (15%): Database initialization Script and JS Frontend Validations. <br>
 
 <h5>Statistic from 10th January 2022</h5>
-![statistic](https://github.com/[LuckyForce]/[Logic-Riddle]/blob/[main]/20220110-Contributor-Statistic.jpg?raw=true)
+![statistic](https://github.com/LuckyForce/Logic-Riddle/blob/main/organizational/20220110-Contributor-Statistic.jpg?raw=true)
 
 <h5>Description:</h5> <br>
 A logic calculator, that can calculate with boolean operators and includes an inbuilt user-system for boolean puzzles or riddles.
