@@ -1,0 +1,23 @@
+POS Logik Projekt
+api/riddles?task="getRiddle"&riddle={id}
+api/riddles?task="getRiddles"&search={text}&orderby={id}&filterby{id} GET Searches for Riddles that meet the requirements.
+api/riddles?task="postRiddle"&riddle={id}&rname={rname}&rdescription={rdescription}&rtext={rtext}&solution={expression}&difficulty={int}&user={id}&token={token} POST Creates new Riddle
+api/riddles?task="editRiddle"&riddle={id}&rname={rname}&rdescription={rdescription}&solution={expression}&user={id}&token={token} POST Edits Ri
+api/riddles?task="deleteRiddle"&riddle={id}&user={id}&token={token} POST Deletes Riddle.
+api/riddles?task="checkRiddle"&riddle={id}&solution={expression}&user={id}&token={token} POST Send a possible solution for the riddle.
+api/riddles?task="getLeaderboard"
+api/riddles?task="postComment"&riddle{id}&user={id}&token={id}&ctext={ctext} POST Comments under a Riddle
+api/riddles?task="getComments"&riddle={id}
+api/riddles?task="rate"&rate={stars}&user={id}&token={token} POST Possible Future Addition Rates Riddles
+api/users?task="createUser"&email={mail}&user={id}&pw={pw} POST Creates User
+api/users?task="checkPassword"&user={id}&pw={pw} POST Checking Password of User Returns Session Token
+api/users?task="checkToken"&user={id}&token={id} POST Checking Token of User
+api/users?task="changePassword"&user={id}&pw={pw}&npw={npw} POST Changes Password of User
+api/users?task="forgotPassword"&email={email}&token={id} POST Forgot Password: Sends Email to Change Password
+api/users?task="resetPassword"&email={email}&token={id}&npw={npw} POST Resets Password
+api/users?task="verifyUser"&user={id}&code={code} POST Verifies User
+api/users?task="resendMail"&user={id}&code={code} POST Resends Code to User to verify.
+api/users?task="changeUsername"&user={id}&pw={pw}&nuser={nuser} POST Changes Username
+api/users?task="userAvailable"&user={id} GET Checks if Username is Available.
+api/users?task="deleteUser"&user={id}&pw={pw} POST Deletes User and everything associated with it. 
+api/users?task="userVerified"&user={id} GET Checks if User is verified.

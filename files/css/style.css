@@ -1,0 +1,115 @@
+.bg-dark-grey {
+  background-color: #282a36 !important;
+}
+
+.centralizer {
+  display: grid;
+  align-items: center;
+  text-align: center;
+}
+
+.bg-grey {
+  background-color: #44475a !important;
+}
+
+.bg-light-grey {
+  background-color: #6272a4 !important;
+}
+
+.bg-dark-purple {
+  background-color: #383a59;
+}
+
+.pink {
+  color: #ff79c6 !important;
+}
+
+.green {
+  color: #50fa7b !important;
+}
+
+.purple,
+.purple:active,
+a.purple {
+  color: #bd93f9 !important;
+}
+
+a.purple:hover {
+  color: #7b60a1;
+}
+
+.invisible {
+  display: none;
+}
+
+.header-title {
+  text-align: center;
+  padding-top: 50px;
+  color: #50fa7b;
+}
+
+.signup {
+  background-color: #282a36 !important;
+}
+
+.btn-default {
+  background-color: #bd93f9 !important;
+}
+
+.btn-red {
+  background-color: #ff5555 !important;
+}
+
+#table {
+  overflow-y: auto;
+}
+
+.purple-table {
+  color: #bd93f9;
+  font-size: large;
+}
+
+.purple-table-h {
+  color: #bd93f9;
+  font-size: larger;
+}
+
+.text-main {
+  color: #9b79ca;
+}
+
+.btn-submit {
+  background-color: #50fa7b !important;
+}
+
+.bg-dark-krey {
+  background-color: #2c2e3a;
+}
+
+.green-solved {
+  color: #50fa7b !important;
+  font-size: large;
+}
+
+.red-wrong {
+  color: #ff5555 !important;
+  font-size: large;
+}
+
+.augenkrebs {
+  color: #6a00ff;
+}
+
+a.btn-create {
+  color: #282a36;
+  text-decoration: none;
+}
+
+a.btn-create:hover,
+a.btn-create:active {
+  color: #282a36;
+}
+
+.riddle-card {
+  min-width: 300px !important;
+}
