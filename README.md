@@ -13,7 +13,7 @@ Lasser (38%): Frontend (Everything that had to do with looks), integration of Ca
 Sam (10%): Database initialization Script and JS Frontend Validations. <br>
 
 Estimated hours put in this Project: <b>120 hours</b> <br>
-Lines of Code: <b>About 28.000 - 9000 (Bootstrap) - 6000 (phpMailer)</b> <br>
+Lines of Code: <b>About 13000 (Own Code) - 9000 (Bootstrap) - 6000 (phpMailer)</b> <br>
  
 <h5>Statistic from 10th January 2022</h5>
 https://github.com/LuckyForce/Logic-Riddle/blob/main/organizational/20220110-Contributor-Statistic.jpg
