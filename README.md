@@ -16,7 +16,7 @@ Estimated hours put in this Project: <b>120 hours</b> <br>
 Lines of Code: <b>About 13000 (Own Code) - 9000 (Bootstrap) - 6000 (phpMailer)</b> <br>
  
 <h5>Statistic from 10th January 2022</h5>
-https://github.com/LuckyForce/Logic-Riddle/blob/main/organizational/20220110-Contributor-Statistic.jpg
+<img src="https://github.com/LuckyForce/Logic-Riddle/blob/main/organizational/20220110-Contributor-Statistic.jpg">Statistic Image</img>
 
 <h5>Used tools:</h5>
 https://github.com/dracula/dracula-theme <br>
