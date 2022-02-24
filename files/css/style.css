@@ -113,3 +113,13 @@ a.btn-create:active {
 .riddle-card {
   min-width: 300px !important;
 }
+
+/*Sticky Footer*/
+body{
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+.content{
+  flex: 1;
+}

@@ -4,7 +4,7 @@ $name = "Adrian Schauer";
 $address = "Wilhelmstraße 7b, 3032 Eichgraben";
 $email = "info@adrian-schauer.at";
 ?>
-
+</div>
 <div class="bg-dark-grey purple mb-0">
     <div class="row m-0">
         <div class="col centralizer">
