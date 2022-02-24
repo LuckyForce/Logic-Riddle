@@ -67,4 +67,4 @@
             </ul>
         </div>
     </nav>
-    <div class="content">
+    <div class="content bg-dark-purple">
