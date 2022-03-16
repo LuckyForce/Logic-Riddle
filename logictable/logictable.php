@@ -9,7 +9,7 @@
         <br>
         <br>
         <script src="<?= $site ?>files/js/logictable.js" type="module"></script>
-        <form id="expression-form" class="was-validated">
+        <form id="expression-form" class="was-validated" onsubmit="return false">
             <div class="row justify-content-center pink">
                 <div class="form-group col-md-6">
                     <label for="expression">
