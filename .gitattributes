@@ -1,0 +1,12 @@
+# linguist-language on alle index files to html
+logic.php linguist-language=HTML
+user/user.php linguist-language=HTML
+logictable/logictable.php linguist-language=HTML
+login/login.php linguist-language=HTML
+signup/signup.php linguist-language=HTML
+riddles/riddles.php linguist-language=HTML
+riddles/riddle/riddle.php linguist-language=HTML
+riddles/create/create.php linguist-language=HTML
+error.php linguist-language=HTML
+files/php/footer.php linguist-language=HTML
+files/php/header.php linguist-language=HTML
