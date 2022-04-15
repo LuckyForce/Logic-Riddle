@@ -1,12 +1,13 @@
 <?php
-require "../config.php";
+//Require the config file from the logic folder
+require '../../config.php';
 $dbhost = $config['db']['host'];
 $dbuser = $config['db']['user'];
 $dbpassword = $config['db']['password'];
 $dbname = $config['db']['dbname'];
 
 try {
-    $conn = new PDO("mysql:host=$dbservername;dbname=$dbname", $dbusername, $dbpassword);
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpassword);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     // echo einblenden um zu testen ob die DB Verbindung erfolgreich war!!!!
