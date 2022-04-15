@@ -21,77 +21,65 @@ expression_input.addEventListener("input", checkExpression, false);
 //Event Listener for the buttons for the expression
 const not = document.getElementById("not");
 not.addEventListener("click", function () {
-    //Get Curson Position in input field
-    let input = document.getElementById("expression");
-    let start = input.selectionStart;
-    let end = input.selectionEnd;
-    let text = input.value;
-    let before = text.substring(0, start);
-    let after = text.substring(end, text.length);
-    input.value = before + "¬" + after;
-    input.focus();
-    input.setSelectionRange(start + 1, start + 1);
-    checkExpression();
+    placeCharacter("¬");
 });
 const or = document.getElementById("or");
 or.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "∨";
-    checkExpression();
+    placeCharacter("∨");
 })
 const and = document.getElementById("and");
 and.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "∧";
-    checkExpression();
+    placeCharacter("∧");
 })
 const xor = document.getElementById("xor");
 xor.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "⊻";
-    checkExpression();
+    placeCharacter("⊻");
 })
 const true_button = document.getElementById("true");
 true_button.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "1";
-    checkExpression();
+    placeCharacter("1");
 })
 const false_button = document.getElementById("false");
 false_button.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "0";
-    checkExpression();
+    placeCharacter("0");
 })
 const implies = document.getElementById("implies");
 implies.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "→";
-    checkExpression();
+    placeCharacter("→");
 })
 const if_and_only_if = document.getElementById("iff");
 if_and_only_if.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "⟷";
-    checkExpression();
+    placeCharacter("⟷");
 })
 const nand = document.getElementById("nand");
 nand.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "↑";
-    checkExpression();
+    placeCharacter("↑");
 })
 const nor = document.getElementById("nor");
 nor.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "↓";
-    checkExpression();
+    placeCharacter("↓");
 })
 const bracket_left = document.getElementById("bracket-left");
 bracket_left.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "(";
-    checkExpression();
+    placeCharacter("(");
 })
 const bracket_right = document.getElementById("bracket-right");
 bracket_right.addEventListener("click", function () {
-    expression_input.value = expression_input.value + ")";
-    checkExpression();
+    placeCharacter(")");
 })
 const delete_button = document.getElementById("delete");
 delete_button.addEventListener("click", function () {
     if (expression_input.value.length > 0) {
-        expression_input.value = expression_input.value.slice(0, -1);
+        //Get Cursor position and delete one character
+        let input = expression_input;
+        let start = input.selectionStart;
+        let end = input.selectionEnd;
+        let text = input.value;
+        let before = text.substring(0, start - 1);
+        let after = text.substring(end, text.length);
+        input.value = before + after;
+        input.focus();
+        input.setSelectionRange(start - 1, start - 1);
         checkExpression();
     }
 })
@@ -99,34 +87,42 @@ delete_button.addEventListener("click", function () {
 //Buttons for the Alphabet
 const a = document.getElementById("a");
 a.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "A";
-    checkExpression();
+    placeCharacter("A");
 })
 const b = document.getElementById("b");
 b.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "B";
-    checkExpression();
+    placeCharacter("B");
 })
 const c = document.getElementById("c");
 c.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "C";
-    checkExpression();
+    placeCharacter("C");
 })
 const d = document.getElementById("d");
 d.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "D";
-    checkExpression();
+    placeCharacter("D");
 })
 const e = document.getElementById("e");
 e.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "E";
-    checkExpression();
+    placeCharacter("E");
 })
 const f = document.getElementById("f");
 f.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "F";
-    checkExpression();
+    placeCharacter("F");
 })
+
+function placeCharacter(char) {
+    //Get Curson Position in input field
+    let input = expression_input;
+    let start = input.selectionStart;
+    let end = input.selectionEnd;
+    let text = input.value;
+    let before = text.substring(0, start);
+    let after = text.substring(end, text.length);
+    input.value = before + char + after;
+    input.focus();
+    input.setSelectionRange(start + 1, start + 1);
+    checkExpression();
+}
 
 function checkExpression() {
     document.getElementById("expression").focus();
