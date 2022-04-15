@@ -21,9 +21,18 @@ expression_input.addEventListener("input", checkExpression, false);
 //Event Listener for the buttons for the expression
 const not = document.getElementById("not");
 not.addEventListener("click", function () {
-    expression_input.value = expression_input.value + "¬";
+    //Get Curson Position in input field
+    let input = document.getElementById("expression");
+    let start = input.selectionStart;
+    let end = input.selectionEnd;
+    let text = input.value;
+    let before = text.substring(0, start);
+    let after = text.substring(end, text.length);
+    input.value = before + "¬" + after;
+    input.focus();
+    input.setSelectionRange(start + 1, start + 1);
     checkExpression();
-})
+});
 const or = document.getElementById("or");
 or.addEventListener("click", function () {
     expression_input.value = expression_input.value + "∨";
